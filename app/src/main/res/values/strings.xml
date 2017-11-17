@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Yuk!Memilih</string>
+    <string name="register">REGISTER</string>
+    <string name="login">LOGIN</string>
+    <string name="check">CHECK</string>
+    <string name="nik_hint">Masukkan NIK</string>
+    <string name="pw_hint">Masukkan kata sandi</string>
+    <string name="pw_hint2">Masukkan lagi kata sandi</string>
+    <string name="label_data"><u>Data Penduduk</u></string>
+
+</resources>
