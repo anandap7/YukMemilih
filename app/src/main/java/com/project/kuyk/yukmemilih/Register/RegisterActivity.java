@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.firebase.client.Firebase;
 import com.project.kuyk.yukmemilih.R;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -16,7 +17,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        NidCheckFragment fragmentHome = new NidCheckFragment();
+        NikCheckFragment fragmentHome = new NikCheckFragment();
         transaction.replace(R.id.frame_content, fragmentHome);
         transaction.commit();
     }

@@ -1,6 +1,9 @@
 package com.project.kuyk.yukmemilih.Menu;
 
 
+import android.app.Activity;
+import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.project.kuyk.yukmemilih.MainActivity;
 import com.project.kuyk.yukmemilih.R;
 
 /**
@@ -38,6 +42,7 @@ public class PilpresFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getContext(), "Anda telah memilih " + calon1.getText(), Toast.LENGTH_SHORT).show();
+                exit();
             }
         });
 
@@ -45,9 +50,15 @@ public class PilpresFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getContext(), "Anda telah memilih " + calon2.getText(), Toast.LENGTH_SHORT).show();
+                exit();
             }
         });
         return v;
     }
 
+    public void exit(){
+        Intent i = new Intent(getActivity(), MainActivity.class);
+        startActivity(i);
+        getActivity().finish();
+    }
 }

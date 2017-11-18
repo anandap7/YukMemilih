@@ -19,7 +19,6 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
         pager = (ViewPager) findViewById(R.id.view_page);
         tabs = (TabLayout) findViewById(R.id.tabs_menu);
         pager.setAdapter(new FragmentAdapter(getSupportFragmentManager()));

@@ -1,6 +1,7 @@
 package com.project.kuyk.yukmemilih.Menu;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.project.kuyk.yukmemilih.MainActivity;
 import com.project.kuyk.yukmemilih.R;
 
 /**
@@ -28,7 +30,7 @@ public class PilbupFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_pilpres, container, false);
+        View v = inflater.inflate(R.layout.fragment_pilbup, container, false);
         vote1 = (Button) v.findViewById(R.id.btn_vote1pb);
         calon1 = (TextView) v.findViewById(R.id.calon1pb);
         vote2 = (Button) v.findViewById(R.id.btn_vote2pb);
@@ -38,6 +40,7 @@ public class PilbupFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getContext(), "Anda telah memilih " + calon1.getText(), Toast.LENGTH_SHORT).show();
+                exit();
             }
         });
 
@@ -45,9 +48,15 @@ public class PilbupFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getContext(), "Anda telah memilih " + calon2.getText(), Toast.LENGTH_SHORT).show();
+                exit();
             }
         });
         return v;
     }
 
+    public void exit(){
+        Intent i = new Intent(getActivity(), MainActivity.class);
+        startActivity(i);
+        getActivity().finish();
+    }
 }
