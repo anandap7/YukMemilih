@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.project.kuyk.yukmemilih.Login.LoginActivity;
-import com.project.kuyk.yukmemilih.Register.NidCheckFragment;
 import com.project.kuyk.yukmemilih.Register.RegisterActivity;
 
 public class MainActivity extends AppCompatActivity {

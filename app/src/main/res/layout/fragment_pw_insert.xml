@@ -48,6 +48,6 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:text="@string/create"
         android:textSize="18sp"/>
 </LinearLayout>

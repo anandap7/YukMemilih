@@ -3,6 +3,8 @@ package com.project.kuyk.yukmemilih.Register;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +29,18 @@ public class NidCheckFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_nid_check, container, false);
+        check = (Button) v.findViewById(R.id.btnCheck);
+        check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction transaction = fragmentManager.beginTransaction();
+                PwInsertFragment fragmentHome = new PwInsertFragment();
+                transaction.replace(R.id.frame_content, fragmentHome);
+                transaction.commit();
+            }
+        });
+
         return v;
     }
 }
