@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.project.kuyk.yukmemilih.R;
 
@@ -13,6 +14,7 @@ import com.project.kuyk.yukmemilih.R;
  * A simple {@link Fragment} subclass.
  */
 public class NidCheckFragment extends Fragment {
+    Button check;
 
 
     public NidCheckFragment() {
@@ -27,5 +29,4 @@ public class NidCheckFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_nid_check, container, false);
         return v;
     }
-
 }
