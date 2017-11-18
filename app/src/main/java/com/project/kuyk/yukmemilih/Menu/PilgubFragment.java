@@ -6,6 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.project.kuyk.yukmemilih.R;
 
@@ -13,7 +16,8 @@ import com.project.kuyk.yukmemilih.R;
  * A simple {@link Fragment} subclass.
  */
 public class PilgubFragment extends Fragment {
-
+    Button vote1, vote2;
+    TextView calon1, calon2;
 
     public PilgubFragment() {
         // Required empty public constructor
@@ -24,7 +28,26 @@ public class PilgubFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pilgub, container, false);
+        View v = inflater.inflate(R.layout.fragment_pilpres, container, false);
+        vote1 = (Button) v.findViewById(R.id.btn_vote1pg);
+        calon1 = (TextView) v.findViewById(R.id.calon1pg);
+        vote2 = (Button) v.findViewById(R.id.btn_vote2pg);
+        calon2 = (TextView) v.findViewById(R.id.calon2pg);
+
+        vote1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Anda telah memilih " + calon1.getText(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        vote2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Anda telah memilih " + calon2.getText(), Toast.LENGTH_SHORT).show();
+            }
+        });
+        return v;
     }
 
 }

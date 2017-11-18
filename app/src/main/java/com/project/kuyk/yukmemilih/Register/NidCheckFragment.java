@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.project.kuyk.yukmemilih.R;
 
@@ -17,7 +19,7 @@ import com.project.kuyk.yukmemilih.R;
  */
 public class NidCheckFragment extends Fragment {
     Button check;
-
+    EditText nik;
 
     public NidCheckFragment() {
         // Required empty public constructor
@@ -30,6 +32,7 @@ public class NidCheckFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_nid_check, container, false);
         check = (Button) v.findViewById(R.id.btnCheck);
+        nik = (EditText) v.findViewById(R.id.etNik);
         check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

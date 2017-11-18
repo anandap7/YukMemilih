@@ -1,12 +1,57 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="50dp"
     tools:context="com.project.kuyk.yukmemilih.Menu.PilbupFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="160dp" />
+        <TextView
+            android:id="@+id/calon1pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calon1"/>
+        <Button
+            android:id="@+id/btn_vote1pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vote"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="160dp" />
+        <TextView
+            android:id="@+id/calon2pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calon2"/>
+        <Button
+            android:id="@+id/btn_vote2pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vote"/>
+    </LinearLayout>
+</LinearLayout>

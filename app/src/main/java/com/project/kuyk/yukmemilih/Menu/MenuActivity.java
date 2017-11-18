@@ -1,17 +1,17 @@
 package com.project.kuyk.yukmemilih.Menu;
 
-import android.support.v7.app.AppCompatActivity;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 
 import com.project.kuyk.yukmemilih.R;
 
 public class MenuActivity extends AppCompatActivity {
-    Toolbar toolbar;
-    ViewPager pager;
-    TabLayout tab;
+    private Toolbar toolbar;
+    private ViewPager pager;
+    private TabLayout tabs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +19,13 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        pager = (ViewPager) findViewById(R.id.pager);
-        tab = (TabLayout) findViewById(R.id.tab_layout);
-
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
+        pager = (ViewPager) findViewById(R.id.view_page);
+        tabs = (TabLayout) findViewById(R.id.tabs_menu);
         pager.setAdapter(new FragmentAdapter(getSupportFragmentManager()));
-        tab.setTabTextColors(getResources().getColor(android.R.color.black),
-                getResources().getColor(android.R.color.white));
-        tab.setupWithViewPager(pager);
-        tab.setTabGravity(TabLayout.GRAVITY_FILL);
+        tabs.setTabTextColors(getResources().getColor(android.R.color.black)
+                ,getResources().getColor(android.R.color.white));
+        tabs.setupWithViewPager(pager);
+        tabs.setTabGravity(TabLayout.GRAVITY_FILL);
     }
 }

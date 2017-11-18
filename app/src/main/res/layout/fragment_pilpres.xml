@@ -17,10 +17,12 @@
             android:layout_width="120dp"
             android:layout_height="160dp" />
         <TextView
+            android:id="@+id/calon1pp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/calon1"/>
         <Button
+            android:id="@+id/btn_vote1pp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/vote"/>
@@ -42,10 +44,12 @@
             android:layout_width="120dp"
             android:layout_height="160dp" />
         <TextView
+            android:id="@+id/calon2pp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/calon2"/>
         <Button
+            android:id="@+id/btn_vote2pp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/vote"/>

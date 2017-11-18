@@ -6,17 +6,17 @@
     android:orientation="vertical"
     android:layout_margin="30dp"
     android:gravity="center"
-    tools:context="com.project.kuyk.yukmemilih.Login.LoginActivity">
+    tools:context="com.project.kuyk.yukmemilih.LoginActivity">
 
     <EditText
-        android:id="@+id/etNik"
+        android:id="@+id/etNikLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/nik_hint"
         android:textAlignment="center"/>
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etPasswordLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/pw_hint"

@@ -2,7 +2,7 @@
     <string name="app_name">Yuk!Memilih</string>
     <string name="register">Daftar</string>
     <string name="login">Masuk</string>
-    <string name="check">Cek</string>
+    <string name="check">Cek NIK</string>
     <string name="nik_hint">Masukkan NIK</string>
     <string name="pw_hint">Masukkan kata sandi</string>
     <string name="pw_hint2">Masukkan lagi kata sandi</string>

@@ -3,10 +3,6 @@ package com.project.kuyk.yukmemilih.Menu;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-import com.project.kuyk.yukmemilih.Menu.PilpresFragment;
-import com.project.kuyk.yukmemilih.Menu.PilgubFragment;
-import com.project.kuyk.yukmemilih.Menu.PilbupFragment;
 /**
  * Created by a_pri on 11/18/2017.
  */
