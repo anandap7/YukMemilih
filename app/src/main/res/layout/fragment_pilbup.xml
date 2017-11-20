@@ -20,12 +20,17 @@
             android:id="@+id/calon1pb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/calon1"/>
+            android:text="@string/calon1"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
         <Button
             android:id="@+id/btn_vote1pb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/vote"/>
+            android:layout_marginTop="8dp"
+            android:text="@string/vote"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_button"/>
     </LinearLayout>
 
     <View
@@ -47,11 +52,16 @@
             android:id="@+id/calon2pb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/calon2"/>
+            android:text="@string/calon2"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
         <Button
             android:id="@+id/btn_vote2pb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/vote"/>
+            android:layout_marginTop="8dp"
+            android:text="@string/vote"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_button"/>
     </LinearLayout>
 </LinearLayout>

@@ -22,8 +22,7 @@
             android:id="@+id/dataPenduduk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Data\..\n.\n.\n.\n.\n.\n.
-            \n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n"
+            android:text="Nama : \nAlamat :\n..\n.."
             android:textSize="22sp"/>
     </ScrollView>
 
